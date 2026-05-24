@@ -89,31 +89,35 @@ export function About() {
           </span>
         </motion.div>
 
-        {/* Bio */}
+        {/* Bio Section with Photograph Space */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6, delay: 0.1 }}
-          className="mx-auto mb-10 w-full max-w-3xl"
+          className="mx-auto mb-10 w-full max-w-4xl"
         >
-          <div className="glass rounded-2xl p-6 sm:p-8">
-            <p className="text-sm leading-relaxed text-foreground-muted sm:text-base lg:text-lg">
-              <span className="font-semibold text-foreground">
-                Aman Tiwari
-              </span>{" "}
-              is an AI/ML and Robotics engineer at{" "}
-              <span className="text-accent-blue font-medium">IIT Roorkee</span>{" "}
-              specializing in{" "}
-              <span className="text-accent-cyan">Computer Vision</span>,{" "}
-              <span className="text-accent-cyan">Large Language Models</span>,{" "}
-              <span className="text-accent-cyan">Embedded AI Systems</span> and{" "}
-              <span className="text-accent-cyan">Autonomous Intelligence</span>.
-              His work spans multi-agent AI systems, real-time RAG pipelines,
-              robotics perception, SDR optimization and intelligent automation
-              systems. He combines research-oriented engineering with scalable AI
-              system design.
-            </p>
+          <div className="glass glow-border overflow-hidden rounded-3xl p-6 sm:p-8">
+            <div className="grid gap-8 md:grid-cols-[1fr_2fr] items-center">
+              {/* Photograph Space */}
+              <div className="relative aspect-square w-full max-w-[220px] mx-auto md:mx-0 overflow-hidden rounded-2xl bg-gradient-to-br from-accent-blue/5 to-purple-500/5 border border-white/5 flex items-center justify-center group transition-all duration-500 hover:border-accent-blue/30 hover:shadow-lg hover:shadow-accent-blue/10">
+                <div className="absolute inset-0 bg-gradient-to-br from-accent-blue/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                <div className="flex flex-col items-center gap-2 text-foreground-dim">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-accent-blue/50"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/></svg>
+                  <span className="text-[10px] font-medium tracking-widest uppercase">Photograph</span>
+                </div>
+              </div>
+              
+              {/* Narrative Text */}
+              <div className="flex flex-col space-y-5">
+                <p className="text-sm leading-relaxed text-foreground-muted sm:text-base lg:text-lg">
+                  I’m an AI/ML and Robotics engineer at <span className="font-semibold text-foreground">IIT Roorkee</span> focused on building intelligent systems across <span className="text-accent-cyan font-medium">Computer Vision</span>, <span className="text-accent-cyan font-medium">Large Language Models</span>, Robotics and <span className="text-accent-blue font-medium">Embedded AI</span>.
+                </p>
+                <p className="text-sm leading-relaxed text-foreground-muted sm:text-base lg:text-lg">
+                  My work spans multi-agent AI systems, real-time RAG pipelines, autonomous perception systems and AI-driven optimization. I enjoy combining research-oriented machine learning with scalable real-world engineering.
+                </p>
+              </div>
+            </div>
           </div>
         </motion.div>
 

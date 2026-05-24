@@ -120,7 +120,7 @@ export function Hero() {
             href="https://github.com/aman2603tiwari"
             target="_blank"
             rel="noopener noreferrer"
-            className="group inline-flex w-full items-center justify-center gap-2 rounded-full bg-foreground px-6 py-3 text-sm font-medium text-background transition-all hover:bg-foreground/90 hover:scale-105 sm:w-auto"
+            className="inline-flex w-full items-center justify-center gap-2 rounded-full border border-glass-border bg-white/5 px-6 py-3 text-sm font-medium text-foreground transition-all hover:bg-white/10 hover:scale-105 sm:w-auto"
           >
             <GithubIcon size={16} />
             GitHub
