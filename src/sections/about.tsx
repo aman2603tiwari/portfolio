@@ -104,7 +104,7 @@ export function About() {
               <div className="relative aspect-square w-full max-w-[220px] mx-auto md:mx-0 overflow-hidden rounded-2xl bg-gradient-to-br from-accent-blue/5 to-purple-500/5 border border-white/5 flex items-center justify-center group transition-all duration-500 hover:border-accent-blue/30 hover:shadow-lg hover:shadow-accent-blue/10">
                 <div className="absolute inset-0 bg-gradient-to-br from-accent-blue/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10" />
                 <Image
-                  src="/profile.jpg"
+                  src="/profile.png"
                   alt="Aman Tiwari Profile Photo"
                   fill
                   className="object-cover transition-transform duration-500 group-hover:scale-105"
